@@ -36,7 +36,7 @@ roclet_output.roclet_api <- function(x, results, base_path, ...) {
 
   # FIXME: Add marker that indicates if this is "our" file
   # FIXME: write_if_different()
-  cat("Writing API\n")
+  cli::cli_inform(c(i = "Writing {.path API}"))
   writeLines(output, API)
 
   withr::with_dir(base_path, usethis::use_build_ignore(file_name))

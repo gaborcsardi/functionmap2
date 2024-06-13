@@ -13,6 +13,7 @@ RoxygenNote: 5.0.1.9000
 Roxygen: list(markdown = TRUE, roclets = c("collate", "rd", "namespace", "pkgapi::api_roclet"))
 Imports:
     callr,
+    cli,
     pkgload,
     roxygen2 (>= 6.1.0),
     tools,
